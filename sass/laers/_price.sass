@@ -1,0 +1,64 @@
+.price
+  &__block
+    flex-direction: column
+    padding-bottom: 120px
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 50%
+      width: 1px
+      height: 72px
+      background-color: #eaf1f7
+  &__title
+    padding-top: 118px
+  &__text
+    padding-top: 29px 
+    padding-bottom: 74px
+    max-width: 358px
+    width: 100%
+  &__cards
+    align-items: baseline
+    width: 100%   
+  &__card
+    width: 33%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    position: relative
+    min-height: 400px
+    height: 100%
+    &:nth-last-of-type(n+2)
+      &::after  
+        position: absolute
+        content: ''
+        top: 0
+        right: -5%
+        width: 2px
+        height: 100%
+        background-color: #eaf1f7
+    &__title
+      font-size: 24px
+      line-height: 1.2
+      font-weight: 700
+    &__text
+      // padding-bottom: 29px
+      text-align: center
+      &-2
+        max-width: 224px
+        width: 100%
+      &-3
+        max-width: 122px
+        width: 100%
+  &__numb
+    // padding-top: 27px
+    // padding-bottom: 45px
+    color: $icon
+    font-size: 24px
+    line-height: 1.2
+    font-weight: 700
+  &__button
+    // margin-top: 40px
+    padding: 0 50px
